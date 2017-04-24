@@ -8,7 +8,8 @@ module Orats
   module Commands
     class New < Common
       AVAILABLE_TEMPLATES = {
-        base: 'dockerized production ready application'
+        base: 'dockerized production-ready application',
+        mailcatcher: 'dockerized production-ready application, with mailcatcher!'
       }.freeze
 
       def initialize(target_path = '', options = {})
